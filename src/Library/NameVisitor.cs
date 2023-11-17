@@ -5,12 +5,12 @@ namespace Library;
 
 public class NameVisitor : IVisitor<Person>
 {
-    public string longerName { get; private set; } = " ";
+    public string longestName { get; private set; } = " ";
     public void Visit(Node<Person> visitable)
     {
-        if (visitable.Element.Name.Length > longerName.Length)
+        if (visitable.Element.Name.Length > longestName.Length)
         {
-            longerName = visitable.Element.Name;
+            longestName = visitable.Element.Name;
         }
 
         foreach (var child in visitable.Children)

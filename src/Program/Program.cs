@@ -40,7 +40,7 @@ namespace Program
 
             NameVisitor myName = new NameVisitor();
             myName.Visit(nYo);
-            Console.WriteLine($"nombre mas largo: {myName.longerName}");
+            Console.WriteLine($"nombre mas largo: {myName.longestName}");
         }
     }
 }
